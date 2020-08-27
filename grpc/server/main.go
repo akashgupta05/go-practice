@@ -10,8 +10,6 @@ import (
 	"google.golang.org/grpc"
 )
 
-//go:generate protoc --go_out=plugins=grpc:. ./app/app.proto
-
 type Listener int
 
 func (l *Listener) GetData(c context.Context, r *app.Request) (*app.Response, error) {
