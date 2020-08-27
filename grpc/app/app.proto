@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package app;
+option go_package = "./app;app";
+
+// Request
+message Request{
+    string data = 1;
+}
+
+// Response
+message Response {
+    string data = 1;
+}
+
+// RPC method
+service App {
+    rpc GetData(Request) returns (Response);
+}
