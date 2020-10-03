@@ -1,3 +1,4 @@
+// Example of channels
 package main
 
 import (
@@ -33,6 +34,5 @@ func main() {
 	for item := range ch {
 		commulativeSum += item
 	}
-	fmt.Println("Supersum of sum of first n numbers", commulativeSum)
-
+	fmt.Println("Supersum of sum of first n integers", commulativeSum)
 }
